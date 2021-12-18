@@ -6,30 +6,46 @@
     display: flex;
     justify-content: space-between;
     padding: 0px;
-    background: #13293d;
+    background: #0e3355;
     color: #fff;
 }
 
-nav {
-    display: flex;
-    text-decoration: underline;
-    
+.toplinks {
+    overflow: hidden;
+    background-color: #333;
 }
 
-nav li {
+.toplinks a {
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px;
+    text-decoration: underline;
+  }
+
+.toplinks a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.toplinks li,
+.footlinks li {
     display: inline;
 }
 
 .backsplash {
-    background-image: url(/images/demo.jpg);
-    background-repeat: no-repeat;
-    width: 10px;
-    height: 20px;
+    width: 10%;
 }
 
 header nav {
     display: flex;
     justify-content: flex-end;
+}
+
+.footlinks {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 /* @media screen and (max-width: 768px) {
