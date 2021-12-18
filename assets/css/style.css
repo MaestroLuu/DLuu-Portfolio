@@ -1,14 +1,23 @@
+
+
+body {
+    background-color: rgb(9, 53, 40);
+    color: rgb(243, 243, 243)
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
-    padding: 0px;
-    background: #0e3355;
     color: #fff;
+    background-color: #333;
+}
+
+#nametag {
+    margin: 10px;
 }
 
 .toplinks {
     overflow: hidden;
-    background-color: #333;
 }
 
 .toplinks a {
@@ -30,14 +39,96 @@
 }
 
 .backsplash {
-    width: 100%;
-    height: auto;
+    height: 600px;
+    width:auto;
+    margin-bottom: 25px;
+    background-image: url(../images/demo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-style: solid;
 }
 
 header nav {
     display: flex;
     justify-content: flex-end;
 }
+
+.content {
+    width: 70%;
+    display: flex block;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 20px;
+    width: 20%;
+    height: 100%;
+    background-color: #2589bd;
+}
+
+/*Consolidated classes with same style*/
+.benefit-lead,
+.benefit-brand,
+.benefit-cost
+ {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/*Consolidated classes with same style*/
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3
+ {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*Consolidated classes with same style*/
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img
+ {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*Consolidated classes with same style*/
+.about-me,
+.projects,
+.contact
+ {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/*Consolidated classes with same style*/
+.about-me img,
+.projects img,
+.contact img
+ {
+    max-height: 200px;
+}
+
+/*Consolidated classes with same style*/
+.about-me h2,
+.projects h2,
+.contact h2
+ {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
 
 .footlinks {
     display: flex;
