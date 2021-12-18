@@ -1,4 +1,48 @@
-header {
-
+:root {
+    --gold: rgb(205, 218, 23)
 }
 
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    background: #13293d;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    text-decoration: underline;
+    
+}
+
+nav li {
+    display: inline;
+}
+
+.backsplash {
+    background-image: url(/images/demo.jpg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    header {
+      background: #772014;
+    }
+    nav,
+    footer {
+      background-color: #bb8588;
+    }
+  } */
+  
