@@ -1,26 +1,38 @@
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body {
-    background-color: rgb(9, 53, 40);
-    color: rgb(243, 243, 243)
+    background-color: #2C6705;
+    color: #E2DBAC;
 }
 
-.main-header {
+header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
     background-color: #333;
+    position: sticky;
+    top: 0px;
 }
 
-#nametag {
-    margin: 10px;
+h1 {
+    color: #fff;
+    margin-left: 20px;
+    text-shadow: 1px 1px 2px #AEC957;
 }
 
-.toplinks {
+header .toplinks {
+    justify-content: flex-end;
+    display: inline;
     overflow: hidden;
 }
 
-.toplinks a {
+.toplinks a,
+.footlinks a {
     display: inline;
     color: #f2f2f2;
     text-align: center;
@@ -28,47 +40,62 @@ body {
     text-decoration: underline;
   }
 
-.toplinks a:hover {
+.toplinks a:hover,
+.footlinks a:hover {
     background-color: #ddd;
     color: black;
   }
 
 .toplinks li,
-.footlinks li {
+ {
     display: inline;
 }
 
 .backsplash {
     height: 600px;
-    width:auto;
+    width: 100%;
     margin-bottom: 25px;
     background-image: url(../images/demo.jpg);
     background-size: cover;
     background-position: center;
-    border-style: solid;
 }
 
-header nav {
+/* main {
     display: flex;
-    justify-content: flex-end;
-}
+} */
+
 
 .content {
     width: 70%;
     display: flex block;
     justify-content: flex-start;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
-.benefits {
-    display: flex;
+main .benefits {
     justify-content: flex-end;
     flex-direction: column;
-    margin-right: 20px;
+    margin-right: 0px;
     padding: 20px;
     width: 20%;
     height: 100%;
     background-color: #2589bd;
+}
+
+footer {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: #fff;
+    background-color: #333;
+    border-style: ridge;
+    top: 0px;
+
+}
+
+footer .footlinks {
+    display: block;
+    justify-content: flex-start;
 }
 
 /*Consolidated classes with same style*/
