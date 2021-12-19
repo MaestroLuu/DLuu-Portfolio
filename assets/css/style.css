@@ -80,46 +80,69 @@ main {
 
 }
 
-.about-me h1 {
-    width: 40%;
+.about-me h1,
+.projects h1 {
+    width: 30%;
 }
 
 .projects {
     display: flex;
-    align-items: center;
-
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.projects h1 {
-    width: 40%;
+.main-sample {
+    flex: 1 0 50%;
+    width: 50%
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
 }
 
+.secondary-sample {
+    flex: 1 0 100%;
+    width: 50%;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
 
-main .benefits {
-    /* justify-content: flex-end;
-    flex-direction: column; */
-    margin-right: 0px;
-    padding: 0px;
-    width: 20%;
-    height: 100%;
-    background-color: #2589bd;
-}
 
 footer {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
     color: #fff;
     background-color: #333;
     border-style: ridge;
     top: 0px;
-
 }
 
-footer .footlinks {
-    display: block;
+footer h2 {
+    width: 30%;
+}
+  /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+  .card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* make each code card a flexbox column to align and justify content within it */
+  .code-card {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-}
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--heliotrope);
+  
+    /* outline is like border, but on the outside of the box instead of inside */
+    outline: 2px dashed var(--gin);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+
 
 /*Consolidated classes with same style*/
 .benefit-lead,
