@@ -7,6 +7,13 @@
 body {
     background-color: #2C6705;
     color: #E2DBAC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+a:visited {
+    color:#fff;
+    /* text-decoration: none; */
 }
 
 header {
@@ -14,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    background-color: #333;
+    background-image: linear-gradient(#AEC957, #2C6705);
     position: sticky;
     top: 0px;
 }
@@ -22,13 +29,14 @@ header {
 h1 {
     color: #fff;
     margin-left: 20px;
-    text-shadow: 1px 1px 2px #AEC957;
+    /* text-shadow: 1px 1px 2px #AEC957; */
+    font-size: 50px;
 }
 
-header .toplinks {
-    justify-content: flex-end;
+header .toplinks ul li {
     display: inline;
     overflow: hidden;
+    list-style-type: none;
 }
 
 .toplinks a,
@@ -46,9 +54,9 @@ header .toplinks {
     color: black;
   }
 
-.toplinks li,
- {
-    display: inline;
+main {
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
 .backsplash {
@@ -60,23 +68,38 @@ header .toplinks {
     background-position: center;
 }
 
-/* main {
-    display: flex;
-} */
-
 
 .content {
-    width: 70%;
-    display: flex block;
-    justify-content: flex-start;
+    width: 100%;
     margin-left: 0px;
 }
 
+.about-me {
+    display: flex;
+    align-items: center;
+
+}
+
+.about-me h1 {
+    width: 40%;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+
+}
+
+.projects h1 {
+    width: 40%;
+}
+
+
 main .benefits {
-    justify-content: flex-end;
-    flex-direction: column;
+    /* justify-content: flex-end;
+    flex-direction: column; */
     margin-right: 0px;
-    padding: 20px;
+    padding: 0px;
     width: 20%;
     height: 100%;
     background-color: #2589bd;
@@ -131,11 +154,7 @@ footer .footlinks {
 .projects,
 .contact
  {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    padding: 20px;
     color: #ffffff;
 }
 
@@ -162,7 +181,7 @@ footer .footlinks {
     align-items: flex-end;
     justify-content: center;
 }
-
+ */
 /* @media screen and (max-width: 768px) {
     main,
     nav {
