@@ -8,7 +8,7 @@ body {
     background-color: #2C6705;
     color: #E2DBAC;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 a:visited {
@@ -28,9 +28,9 @@ header {
 
 h1 {
     color: #fff;
-    margin-left: 20px;
-    /* text-shadow: 1px 1px 2px #AEC957; */
-    font-size: 50px;
+    margin-left: 1.2rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 header .toplinks ul li {
@@ -68,7 +68,6 @@ main {
     background-position: center;
 }
 
-
 .content {
     width: 100%;
     margin-left: 0px;
@@ -80,29 +79,46 @@ main {
 
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
 .about-me h1,
 .projects h1 {
     width: 30%;
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.about-me,
+.projects,
+.contact
+ {
+    padding: 20px;
+    color: #ffffff;
 }
 
 .main-sample {
-    flex: 1 0 50%;
-    width: 50%
+    /* flex: 1 0 100%; */
+    width: 100%;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+    border-style: solid blue;
+
+}
+
+.secondary-sample {
+    /* flex: 1 0 100%; */
+    max-width: 100%;
     transition: flex-basis 500ms linear;
     margin-bottom: 1.5rem;
 }
 
-.secondary-sample {
-    flex: 1 0 100%;
-    width: 50%;
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
+.main-sample a img,
+.secondary-sample a img {
+    max-width: 33.333%;
+}
 
 
 footer {
@@ -142,80 +158,23 @@ footer h2 {
     transition: all 0.5s ease-in-out;
   }
   
-
-
 /*Consolidated classes with same style*/
-.benefit-lead,
-.benefit-brand,
-.benefit-cost
- {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/*Consolidated classes with same style*/
-.benefit-lead h3,
-.benefit-brand h3,
-.benefit-cost h3
- {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/*Consolidated classes with same style*/
-.benefit-lead img,
-.benefit-brand img,
-.benefit-cost img
- {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/*Consolidated classes with same style*/
-.about-me,
-.projects,
-.contact
- {
-    padding: 20px;
-    color: #ffffff;
-}
-
-/*Consolidated classes with same style*/
-.about-me img,
-.projects img,
-.contact img
- {
-    max-height: 200px;
-}
-
-/*Consolidated classes with same style*/
-.about-me h2,
-.projects h2,
-.contact h2
- {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
 
 .footlinks {
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
- */
-/* @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
     header {
-      background: #772014;
+      width: 75%;
     }
-    nav,
-    footer {
-      background-color: #bb8588;
-    }
-  } */
   
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
+    
