@@ -29,17 +29,16 @@ header {
 }
 
 header nav {
-    padding-top: 15px;
-    margin-right: 20px;
+    padding-top: 1.1rem;
+    margin-right: 1.4rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 header nav ul li {
     list-style-type: none;
     display: inline-block;
-    margin-left: 25px;
-    font-size: 20px;
+    margin-left: 1.6rem;
 }
 
 a {
@@ -63,28 +62,19 @@ p {
 
 .banner {
     display: flex;
-    min-height: 20vh;
+    min-height: 32vh;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 1rem;
     background-image: url("https://www.heartlandcln.org/wp-content/uploads/2014/09/san-diego-skyline-at-night-hd-wallpaper-13020.jpg");
     background-size: cover;
     background-position: 50% 35%;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-.content {
-    width: 75%;
+.biography {
+    width: 100%;
     display: inline-block;
 }
+
 
 /*Consolidated classes with same style*/
 .about-me,
@@ -100,10 +90,28 @@ p {
 }
 
 /*Consolidated classes with same style*/
-.about-me h1,
-.projects h1 {
-    margin-bottom: 20px;
-    font-size: 48px;
+.about-me aside,
+.projects aside {
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    align-self: center;
+    font-size: 3rem;
+}
+
+.about-me aside h1 {
+    text-align: right;
+}
+
+ {
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    font-size: 3rem;
+
+}
+
+.about-me content,
+.projects content {
+    padding: 1.2rem;
 }
 
 .about-me p,
@@ -124,6 +132,7 @@ div.main-sample {
 .projects .main-sample {
     margin: 10px;
     background-image: url("https://wallpaperaccess.com/full/250145.jpg");
+    
     background-size: cover;
     background-repeat: no-repeat;
     border: 3px solid #333;
