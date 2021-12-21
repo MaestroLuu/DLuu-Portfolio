@@ -81,7 +81,6 @@ p {
 .projects {
     display: flex;
     margin-bottom: 10px;
-    padding: 20px;
     width: 100vw;
     height: auto; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -93,20 +92,14 @@ p {
 .about-me aside,
 .projects aside {
     margin-bottom: 1rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
     align-self: center;
     font-size: 3rem;
 }
 
-.about-me aside h1 {
+.about-me aside h1,
+.projects aside h1 {
     text-align: right;
-}
-
- {
-    margin-bottom: 1rem;
-    margin-left: 3rem;
-    font-size: 3rem;
-
 }
 
 .about-me content,
@@ -114,15 +107,10 @@ p {
     padding: 1.2rem;
 }
 
-.about-me p,
-.projects p {
+.about-me p {
     align-self: flex-start;
     padding: 20px;
 }
-
-/* .projects .sample {
-    display: flex;
-} */
 
 div.main-sample {
     width: 66vw;
@@ -130,13 +118,22 @@ div.main-sample {
 }
 
 .projects .main-sample {
-    margin: 10px;
+    position: relative;
+    margin: 0.8rem;
     background-image: url("https://wallpaperaccess.com/full/250145.jpg");
-    
     background-size: cover;
     background-repeat: no-repeat;
     border: 3px solid #333;
 }
+
+.textblock {
+    border: 0.2rem solid black;
+    background-color: black;
+    position: absolute;
+    top: 75%;
+    left: 0;
+}
+
 
 /*Changed class .footer to element footer to redundancy*/
 footer {
