@@ -13,11 +13,11 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 1%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    position: sticky;
+    /* position: sticky; */
     top: 0px;
 }
 
@@ -62,12 +62,25 @@ p {
 
 .banner {
     display: flex;
+    position: relative;
     min-height: 32vh;
     width: 100%;
     margin-bottom: 1rem;
     background-image: url("https://www.heartlandcln.org/wp-content/uploads/2014/09/san-diego-skyline-at-night-hd-wallpaper-13020.jpg");
     background-size: cover;
     background-position: 50% 35%;
+}
+
+.subtitle {
+    border: 0.2rem solid black;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.829);
+    position: absolute;
+    bottom: 30%;
+    right: 0;
 }
 
 .biography {
@@ -90,7 +103,8 @@ p {
 
 /*Consolidated classes with same style*/
 .about-me aside,
-.projects aside {
+.projects aside, 
+#contact aside {
     margin-bottom: 1rem;
     margin-left: 2rem;
     align-self: center;
@@ -102,8 +116,7 @@ p {
     text-align: right;
 }
 
-.about-me content,
-.projects content {
+.about-me content {
     padding: 1.2rem;
 }
 
@@ -112,13 +125,24 @@ p {
     padding: 20px;
 }
 
-div.main-sample {
-    width: 66vw;
-    height: 66vh;
+.projects .samples {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects .samples .main-sample {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 0.8rem;
+    background-image: url("https://wallpaperaccess.com/full/250145.jpg");
+    background-size: cover;
+    border: 3px solid #333;
 }
 
-.projects .main-sample {
+.projects .secondary-sample {
     position: relative;
+    width: 35vw;
+    height: 50vh;
     margin: 0.8rem;
     background-image: url("https://wallpaperaccess.com/full/250145.jpg");
     background-size: cover;
@@ -130,7 +154,7 @@ div.main-sample {
     border: 0.2rem solid black;
     background-color: black;
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 0;
 }
 
@@ -148,134 +172,6 @@ footer {
 }
 
 
-/*
-
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: grey;
-    position: sticky;
-    top: 0px;
-}
-
-header div {
-    text-align: center;
-    background-color: rgb(255, 0, 21);
-
-}
-
-h1 {
-    margin: 1.2rem;
-    font-size: 3rem;
-}
-
-header .toplinks ul li {
-    display: inline;
-    overflow: hidden;
-    list-style-type: none;
-}
-
-.toplinks a,
-.footlinks a {
-    display: inline;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 4px;
-    text-decoration: underline;
-}
-
-
-main {
-    width: 100%;
-}  
-
-
-.content {
-    margin-left: 0px;
-}
-
-.about-me {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.projects {
-    display: flex;
-}
- /*
-.projects .sample-links {
-    display: inline;
-    flex-wrap: wrap;
-}
-
-.about-me h1,
-.projects h1 {
-    width: 30%;
-    margin: 0em 1em;
-}
-
-.about-me,
-.projects,
-.contact
- {
-    padding: 20px;
-    color: #ffffff;
-}
-
-.main-sample {
-    flex: 1 0 100%; 
-    width: 100%;
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-    border-style: solid blue;
-
-}
-
-.secondary-sample {
-    flex: 1 0 100%;
-    max-width: 100%;
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-}
-
-.main-sample a img,
-.secondary-sample a img {
-    max-width: 33.333%;
-}
-
-
-
-footer h2 {
-    width: 30%;
-}
-  /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
-  .card-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* make each code card a flexbox column to align and justify content within it */
-  .code-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: var(--heliotrope);
-  
-    /* outline is like border, but on the outside of the box instead of inside */
-    outline: 2px dashed var(--gin);
-    outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
-  }
-  
-/*Consolidated classes with same style*/
 
 .footlinks {
     display: flex;
@@ -289,9 +185,3 @@ footer h2 {
       width: 75%;
     }
   
-    .card-column {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
-    }
-  }
-     */
