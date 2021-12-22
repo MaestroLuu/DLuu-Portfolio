@@ -10,6 +10,16 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+aside {
+    align-self:center;
+    height: 100%;
+    width: 15%;
+    display: inline;
+    padding-right: 7%;
+    padding-left: 5%;
+    font-size: 3rem; 
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -17,6 +27,7 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    width: 100%;
     /* position: sticky; */
     top: 0px;
 }
@@ -42,16 +53,16 @@ header nav ul li {
 }
 
 a {
-    color: #ffffff;
+    color: blue;
     text-decoration: underline;
 }
 
 a:visited {
-    color:#fff;
+    color:rgb(8, 73, 214);
     text-decoration: none;
 }
 
-a:hover {
+.links a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -88,7 +99,6 @@ p {
     display: inline-block;
 }
 
-
 /*Consolidated classes with same style*/
 .about-me,
 .projects {
@@ -97,26 +107,10 @@ p {
     width: 100vw;
     height: auto; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    color: #aa1212;
 }
 
-/*Consolidated classes with same style*/
-.about-me aside,
-.projects aside, 
-#contact aside {
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    align-self: center;
-    font-size: 3rem;
-}
-
-.about-me aside h1,
-.projects aside h1 {
-    text-align: right;
-}
-
-.about-me content {
+.about-me article {
     padding: 1.2rem;
 }
 
@@ -125,15 +119,34 @@ p {
     padding: 20px;
 }
 
-.projects .samples {
+.main-sample a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.samples {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
+
+  /* .ws1, .ws2, .ws3, .ws4, .ws5 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 95%;
+    min-height: 20vh;
+    margin: 1% 3%;
+    position: relative;
+  } */
+
 .projects .samples .main-sample {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 50%;
-    margin: 0.8rem;
+    /* margin: 1rem; */
     background-image: url("https://wallpaperaccess.com/full/250145.jpg");
     background-size: cover;
     border: 3px solid #333;
@@ -143,7 +156,7 @@ p {
     position: relative;
     width: 35vw;
     height: 50vh;
-    margin: 0.8rem;
+    /* margin: 0.8rem; */
     background-image: url("https://wallpaperaccess.com/full/250145.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -158,13 +171,12 @@ p {
     left: 0;
 }
 
-
 /*Changed class .footer to element footer to redundancy*/
 footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: #fff;
+    color: rgb(245, 23, 23);
     background-color: #333;
     border-style: ridge;
     padding: 10px;
