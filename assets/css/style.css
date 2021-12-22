@@ -61,7 +61,7 @@ header nav {
 
 header nav ul li {
     list-style-type: none;
-    display: inline-block;
+    display: inline;
     margin-left: 1.6rem;
 }
 
@@ -138,6 +138,7 @@ header nav ul li {
     position: relative;
     background-image: url("https://wallpaperaccess.com/full/250145.jpg");
     border: 3px solid #333;
+    opacity: .5;
 } 
 
 .secondary-sample {
@@ -149,16 +150,22 @@ header nav ul li {
     position: relative;
     background-image: url("https://wallpaperaccess.com/full/250145.jpg");
     border: 3px solid #333;
+    opacity: .5;
 }
 
 .textblock {
     border: 0.2rem solid black;
     background-color: black;
+    color: white;
     position: absolute;
     top: 50%;
     left: 0;
 }
 
+.main-sample:hover,
+.secondary-sample:hover {
+    opacity: 1;
+}
 footer {
     display: flex;
     flex-direction: row;
