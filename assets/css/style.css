@@ -10,31 +10,43 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+a {
+    color: rgb(253, 253, 253);
+    text-decoration: underline;
+}
+
+.links a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+p {
+    font-size: 16px;
+}
+
 aside {
     align-self:center;
     height: 100%;
     width: 15%;
     display: inline;
-    padding-right: 7%;
+    padding-right: 6%;
     padding-left: 5%;
-    font-size: 3rem; 
-    border-right: .5rem #00028d solid;
+    font-size: 2rem; 
+    border-right: 1rem #00028d solid;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
     width: 100%;
-    /* position: sticky; */
     top: 0px;
 }
 
 .nametag {
-    margin-left: 5vw;
+    padding-left: 5vw;
     font-size: 3rem;
     background-color: chocolate;
     color: #d9dcd6;
@@ -53,25 +65,6 @@ header nav ul li {
     margin-left: 1.6rem;
 }
 
-a {
-    color: blue;
-    text-decoration: underline;
-}
-
-a:visited {
-    color:rgb(8, 73, 214);
-    text-decoration: none;
-}
-
-.links a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-p {
-    font-size: 16px;
-}
-
 .banner {
     display: flex;
     position: relative;
@@ -87,11 +80,12 @@ p {
     border: 0.2rem solid black;
     width: fit-content;
     height: fit-content;
+    padding: 2%;
     font-size: 1.5rem;
     color: white;
     background-color: rgba(128, 128, 128, 0.829);
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     right: 0;
 }
 
@@ -100,7 +94,6 @@ p {
     display: inline-block;
 }
 
-/*Consolidated classes with same style*/
 .about-me,
 .projects {
     display: flex;
@@ -120,7 +113,8 @@ p {
     padding: 20px;
 }
 
-.main-sample a {
+.main-sample a,
+.secondary-sample a {
     display: block;
     width: 100%;
     height: 100%;
@@ -167,17 +161,111 @@ p {
 
 footer {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     color: rgb(245, 23, 23);
-    background-color: #333;
     border-style: ridge;
     padding: 10px;
     bottom: 0px;
 }
 
-.links {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+footer a {
+    color: navy;
 }
+
+footer.links ul {
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.links ul li {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    display: inline;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nametag {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 3rem;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.4rem;
+    }
+    
+    header nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 1.6rem;
+    }
+
+    .about-me,
+    .projects,
+    .contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    width: 100vw;
+    height: auto; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #aa1212;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-right: none;
+        border-bottom: .5rem navy solid;
+        width: 80%;
+    }
+
+    .main-sample {
+        flex: 2 1 100%;
+        min-height: 40vh;
+    }
+
+    .secondary-sample {
+        flex: 0 1 46.5%;
+        min-height: 40vh;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    footer a {
+        color: navy;
+        text-decoration: underline;
+        
+    }
+} 
+
+
+
+
+
+
+  
