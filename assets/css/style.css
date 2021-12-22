@@ -59,6 +59,11 @@ header nav {
     font-size: 1.2rem;
 }
 
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
 header nav ul li {
     list-style-type: none;
     display: inline;
