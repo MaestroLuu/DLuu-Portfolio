@@ -32,7 +32,7 @@ aside {
     padding-right: 6%;
     padding-left: 5%;
     font-size: 2rem; 
-    border-right: 1rem #00028d solid;
+    border-right: 0.4rem #00028d solid;
 }
 
 header {
@@ -89,8 +89,6 @@ header nav ul li {
 
 .subtitle {
     border: 0.2rem solid black;
-    width: fit-content;
-    height: fit-content;
     padding: 2%;
     font-size: 1.5rem;
     color: white;
@@ -109,7 +107,6 @@ header nav ul li {
 .projects {
     display: flex;
     margin-bottom: 10px;
-    width: 100vw;
     height: auto; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #aa1212;
@@ -147,7 +144,7 @@ header nav ul li {
     min-height: 60vh;
     margin: 1% 3%;
     position: relative;
-    background-image: url("https://wallpaperaccess.com/full/250145.jpg");
+    background-image: url("../images/Covid-19-Project/Covid-19-demo.png");
     border: 3px solid #333;
     opacity: .5;
 } 
@@ -178,11 +175,18 @@ header nav ul li {
     opacity: 1;
 }
 
+#day-planner {
+    background-image: url("../images/Day-Planner/Day-Planner-demo.png");
+}
+
+#weather-dashboard {
+    background-image: url("../images/Weather-Dashboard/Weather-Dashboard-demo.png");
+}
+
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
     bottom: 0px;
     color: #aa1212;
 }
@@ -193,9 +197,9 @@ footer a {
 
 footer nav ul {
     display: flex;
-    direction: row;
+    flex-direction: row;
     justify-content: flex-end;
-    line-height: 6em;
+    line-height: 3em;
 }
 
 .links ul li {
@@ -314,10 +318,4 @@ footer nav ul {
         line-height: 2em;
     }
 
-    
 }
-
-
-
-
-  
