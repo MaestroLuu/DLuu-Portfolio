@@ -13,23 +13,51 @@
 <body>
     <header>
         <div class="nametag">
-            <h1>David Luu</h1>
+            <img src="assets/images/profilePic.jpg" alt="David Luu">
         </div>
-        <nav class="links">
-            <ul>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="./assets/images/Updated_Resume-DLUU.pdf">Resume</a></li>
+        <button class="nav-toggle" aria-label="navigation toggle">
+            <span class="hamburger"></span>
+        </button>
+        
+        <nav class="nav">
+            <ul class="nav-links">
+                <li class="nav-items"><a href="#introduction">Home</a></li>
+                <li class="nav-items"><a href="#about-me">About Me</a></li>
+                <li class="nav-items"><a href="#projects">Projects</a></li>
+                <li class="nav-items"><a href="#contact">Contact</a></li>
+                <li class="nav-items"><a href="./assets/images/Updated_Resume-DLUU.pdf">Resume</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="banner">
-            <div class="subtitle">
-                <h3>Welcome to my page!</h3>
-            </div>
+
+<!-- introduction -->
+    <section class="introduction" id="introduction">
+        <h1 class="intro-title">Hello, I am <strong>David Luu!</strong></h1>
+        <p class="intro-subtitle">Full Stack Web Developer</p>
+        <img src="assets/images/Picture2.jpg" alt="a picture of David Luu">
+    </section>
+
+<!-- about me -->
+    <section class="biography" id="about-me">
+        <h2 class="background-information">About Me</h2>
+        <div class="prior-experience">
+            <h3></h3>
+            <p></p>
         </div>
+
+        <div class="technical-knowledge">
+            <h3></h3>
+            <p></p>
+        </div>
+
+        <div class="career-objective">
+            <h3></h3>
+            <p></p>
+        </div>
+
+    </section>
+
+
         <article class="biography">
             <section id="about-me" class="about-me">
                 <aside>
@@ -37,10 +65,9 @@
                 </aside>
                 <article>
                     <p>
-                        My name is David Luu and I'm here for a new start in my professional career. For the past
-                        decade, I've worked in the field of education,
-                        initially as a teacher's aide, but ultimately transitioning into a general education teacher.
-                        The profession of being an instructor was always
+                        My name is David Luu and I am a full stack web developer. For the past
+                        decade, I've worked in the field of education, both in adminstration and 
+                        as a general education teacher. The profession of being an instructor was always
                         fulfilling as I had the privilege to observe young minds develop and realize their potentials. I
                         enjoyed knowing that I was able to play a role
                         in their lives, but moreso that I had the opportunity to act as a mentor and direct them to
@@ -104,7 +131,7 @@
                 </div>
             </nav>
         </section>
-    </main>
+    </section>
 
     <footer id="contact">
         <aside>

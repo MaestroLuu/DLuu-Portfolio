@@ -6,7 +6,7 @@
 
 body {
     background-color: #ffffff;
-    color: #00028d;
+    color: #606c38;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -21,7 +21,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 aside {
@@ -32,7 +32,7 @@ aside {
     padding-right: 6%;
     padding-left: 5%;
     font-size: 2rem; 
-    border-right: 0.4rem #00028d solid;
+    border-right: 7px #00028d solid;
 }
 
 header {
@@ -40,14 +40,14 @@ header {
     align-items: center;
     justify-content: space-between;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: #606c38;
     color: #ffffff;
     width: 100%;
     top: 0px;
 }
 
 .nametag {
-    padding-left: 5vw;
+    padding: 7vw;
     font-size: 3rem;
     background-color: chocolate;
     color: #d9dcd6;
