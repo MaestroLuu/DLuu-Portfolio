@@ -26,7 +26,6 @@ p {
 
 aside {
     align-self:center;
-    height: 100%;
     width: 15%;
     display: inline;
     padding-right: 6%;
@@ -174,19 +173,19 @@ header nav ul li {
 }
 
 #covid19-Testing {
-    background-image: url("../images/covid\ test.jpg");
+    background-image: url("../images/Covid-19-Project/Covid-19-demo.png");
 }
 
 #day-planner {
-    background-image: url("../images/planner.jpg");
+    background-image: url("../images/Day-Planner/Day-Planner-demo.png");
 }
 
 #help-for-hire {
-    background-image: url("../images/jobs.jpg");
+    background-image: url("../images/Help-for-Hire/DemoPic.png");
 }
 
 #weather-dashboard {
-    background-image: url("../images/rain.jpg");
+    background-image: url("../images/Weather-Dashboard/Weather-Dashboard-demo.png");
 }
 
 footer {
